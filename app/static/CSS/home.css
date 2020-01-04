@@ -1,0 +1,24 @@
+.card{
+	margin: 10%;
+	margin-top: 20%;
+}
+body{
+	background-color: transparent;
+}
+html{
+	background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.card_box_group {
+    width: 100%;
+    background: antiquewhite;
+}
+.card_box {
+    display: inline-block;
+    height: 200px;
+    background: white;
+    width: 21%;
+    border-radius: 10%;
+    box-shadow: 1px 0px 5px;
+    margin: 10% 10%;
+    width: 34%;
+}

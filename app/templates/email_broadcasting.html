@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+ <div id="fine-uploader"></div>
+  <div class="container">
+    <form >
+      <label for="from">From</label>
+      <input type="text" id="from" name="from" placeholder="Mail Host...">
+
+      <label for="to">To</label>
+      <input type="text" id="to" name="to" placeholder="Reciepents...."><button id="upload">Upload</button></br>
+      <label for="cc">CC</label>
+      <input type="text" id="cc" name="cc" placeholder="Reciepents in CC....">
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Type a subject....">
+      <label for="body">Body</label>
+      <textarea id="body" name="body" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="button" value="Broadcast">
+    </form>
+  </div>
+{% endblock content %}

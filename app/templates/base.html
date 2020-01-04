@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>CSS Card Hover Effects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/landing_page.css') }}">
+    <section>
+      <header>
+          <a href="#" class="logo"><img src="{{ url_for('static', filename='images/navbar-logo.png') }}"></a>
+          <a class="toggle">Menu</a>
+          <ul class="">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Past Broadcasts</a></li>
+              <li><a href="#">Templates</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Logout</a></li>
+          </ul>
+      </header>
+    </section>
+</head>
+<body>        
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

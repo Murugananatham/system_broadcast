@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card_container">
+	<div class="card_class">
+		<div class="face face1">
+    		<div class="card_content">
+    			<h2>Email Broadcasting</h2>
+    			<img class="body_icon" src="{{ url_for('static', filename='images/email.png') }}"></a>
+    		</div>
+    		<button class="open">Open</button>
+		</div>
+	</div>
+	<div class="card_class">
+		<div class="face face1">
+    		<div class="card_content">
+    			<h2>Text Message Broadcasting</h2>
+    			<img class="body_icon textmessaging" src="{{ url_for('static', filename='images/textmessaging.png') }}"></a>
+    		</div>
+    		<button class="open">Open</button>
+		</div>
+	</div>
+	<div class="card_class">
+		<div class="face face1">
+    		<div class="card_content">
+    			<h2>Whatsapp Broadcasting</h2>
+    			<img class="body_icon" src="{{ url_for('static', filename='images/whatsapp.png') }}"></a>
+    		</div>
+    		<button class="open">Open</button>
+		</div>
+	</div>
+</div>
+{% endblock content %}
