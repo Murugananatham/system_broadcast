@@ -2,12 +2,13 @@
 {% block content %}
  <div id="fine-uploader"></div>
   <div class="container">
-    <form >
+    <form action = "http://localhost:5000/email_broadcast" method = "POST" enctype = "multipart/form-data">
       <label for="from">From</label>
       <input type="text" id="from" name="from" placeholder="Mail Host...">
 
       <label for="to">To</label>
-      <input type="text" id="to" name="to" placeholder="Reciepents...."><button id="upload">Upload</button></br>
+      <input type="text" id="to" name="to" placeholder="Reciepents...."><input type="file" name="file" id="fileToUpload">
+      <input  type="submit" id="upload">Upload</input>
       <label for="cc">CC</label>
       <input type="text" id="cc" name="cc" placeholder="Reciepents in CC....">
 
@@ -16,7 +17,7 @@
       <label for="body">Body</label>
       <textarea id="body" name="body" placeholder="Write something.." style="height:200px"></textarea>
 
-      <input type="button" value="Broadcast">
+      <input type="button" id="broadcast" value="Broadcast">
     </form>
   </div>
 {% endblock content %}

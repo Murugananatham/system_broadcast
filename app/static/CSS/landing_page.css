@@ -208,14 +208,18 @@ input[type=button]:hover {
 }
 
 #to{
-    width: 90%;
+    width: 60%;
     display: inline-block;
+}
+#fileToUpload{
+    width: 25%;
+    margin: 2.5%;
 }
 label[for=to]{
     display: block;
 }
 #upload{
-    width: 9.5%;
+    width: 6.5%;
     display: inline-block;
     margin: 0.25%;
     background-color: #5a56cd;
